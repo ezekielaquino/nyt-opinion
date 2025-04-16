@@ -312,7 +312,7 @@ loadImageAsDataURL('painting1.png')
         const color = painting.getPixel(intersection._point);
         dot.fillColor = new paper.Color(color);
 
-        if (Math.random() > 0.2) {
+        if (Math.random() > Math.random() * 0.1 + 0.1) {
           dot.visible = false;
         }
       });
