@@ -332,6 +332,10 @@ paper.project.importSVG('/c.svg', item => {
 
   item.position = point;
   item.fillColor = gray;
+
+  setTimeout(() => {
+    item.bringToFront();
+  }, 500);
 });
 
 paper.project.importSVG('/piano.svg', item => {
@@ -340,4 +344,8 @@ paper.project.importSVG('/piano.svg', item => {
 
   item.position = point;
   item.fillColor = gray;
+
+  setTimeout(() => {
+    item.bringToFront();
+  }, 500);
 });
